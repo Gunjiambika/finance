@@ -113,20 +113,22 @@ A backend-focused finance dashboard system built using FastAPI with role-based a
 
 ## 📂 Project Structure
 
+```bash
 finance-backend/
-│ 
-├── main.py 
+│
+├── main.py
 ├── models.py
-├── service.py 
+├── service.py
 ├── auth.py
 ├── requirements.txt
-│ 
-├── templates/ 
-|  └── index.html
-│ 
-├── static/ 
-| └── script.js
+│
+├── templates/
+│ └── index.html
+│
+├── static/
+│ ├── script.js
 │ └── style.css
+```
 
 ------------------------------------------------------------------------
 
