@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Finance Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>💰 Finance Dashboard</h1>
+
+<h2>Create User</h2>
+<input id="name" placeholder="Name">
+<select id="role">
+<option>ADMIN</option>
+<option>ANALYST</option>
+<option>VIEWER</option>
+</select>
+<button onclick="createUser()">Create</button>
+
+<h2>Add Record</h2>
+<input id="uid" placeholder="User ID">
+<input id="amount" placeholder="Amount">
+<input id="type" placeholder="income/expense">
+<input id="category" placeholder="Category">
+<button onclick="addRecord()">Add</button>
+
+<h2>Analytics</h2>
+<div class="analytics-box">
+    <input id="aid" placeholder="User ID">
+
+    <button onclick="getSummary()">Summary</button>
+    <button onclick="getCategory()">Category</button>
+    <button onclick="getTrends()">Trends</button>
+</div>
+
+
+<pre id="output"></pre>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
